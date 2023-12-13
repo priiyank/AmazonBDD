@@ -1,14 +1,15 @@
 
-	package PageLayer;
+package PageLayer;
 
-	import java.util.Set;
+import java.util.Set;
+
 
 import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.support.FindBy;
-	import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-	import UtilsLayer.UtilityClass;
-	import  UtilsLayer.UtilityClass.*;
+import UtilsLayer.UtilityClass;
+import  UtilsLayer.UtilityClass.*;
 import UtilsLayer.WindowHandles;
 import BaseLayer.BaseClass;
 
@@ -34,7 +35,7 @@ import BaseLayer.BaseClass;
 		
 	 public RegisterPage()
 	 {
-		 PageFactory.initElements(driver, this);
+		 PageFactory.initElements(driver,this);
 	 }
 	 
 	 public void ClickOnCreateAccount()
@@ -52,20 +53,14 @@ import BaseLayer.BaseClass;
 		
 		UtilityClass.click(Pass); 
 		UtilityClass.sendKeys(Pass,pass);
-		
-		
+			
 	 }
 	 
 	 public void verifyNumber()
 	 {
 		 UtilityClass.click(VerifyPhoneNumber);	
 	 }
-	 
-
-	 
-	 
-	 
-	 
+	  
 	 
 	}
 

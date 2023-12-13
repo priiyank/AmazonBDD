@@ -5,6 +5,7 @@
 
 	import java.util.Set;
 
+import org.testng.Assert;
 
 import BaseLayer.BaseClass;
 import PageLayer.RegisterPage;
@@ -23,7 +24,7 @@ import io.cucumber.java.en.When;
 		@Given("User open the appllication")
 		public void user_open_the_appllication() {
 			
-			BaseClass.initialization();
+	
 		}
 
 		@When("user search iphone product and click on Iphone15 Pro Max")
@@ -32,6 +33,7 @@ import io.cucumber.java.en.When;
 	    Search=new SearchPage();
 	    Search.SearchButton();
 	    Search.EnterProduct("iphone15promax");
+	    Assert.assertEquals("iphone15promax", true);
 	    Search.ClickOnSearchButton();
 	        
 		}
@@ -48,11 +50,10 @@ import io.cucumber.java.en.When;
 	      
 		 
 		  s=(Set<String>) WindowHandles.handleWindow();
+		  Assert.assertEquals(156990,true);
 	      Search.capturePrice();
-			
-			
-			
-			
+	      
+				
 		}
 
 		@Then("Click on add to cart and then click on proceed to checkout")

@@ -1,18 +1,16 @@
+package TestRunner;
 
-	
-	package TestRunner;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-	import io.cucumber.testng.AbstractTestNGCucumberTests;
-	import io.cucumber.testng.CucumberOptions;
-
-	@CucumberOptions(
+@CucumberOptions(
 		
 		        features= {"AllFeatureFile"},
 		        glue= {"StepDefination"},
 		        dryRun=true
 		
 	)
-	public class RunnerTest extends AbstractTestNGCucumberTests {
+	public class RunnerTest extends AbstractTestNGCucumberTests  {
 
 
 	}

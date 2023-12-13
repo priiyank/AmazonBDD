@@ -5,6 +5,7 @@
 
 	import java.util.Set;
 
+
 import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
@@ -80,6 +81,7 @@ import UtilsLayer.WindowHandles;
 			
 			UtilityClass.click(ProccedToCheckout);
 		}
+
 		
 	
 		

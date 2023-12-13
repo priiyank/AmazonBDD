@@ -1,6 +1,4 @@
-
-
-	package BaseLayer;
+package BaseLayer;
 
 import java.io.FileInputStream;
 import java.time.Duration;
@@ -35,4 +33,3 @@ public class BaseClass {
 		}
 
 	}
-
